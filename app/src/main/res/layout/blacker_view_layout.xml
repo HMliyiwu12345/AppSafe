@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_blacker_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拦截电话"
+        android:textSize="20dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_blacker_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拦截模式"
+        android:layout_below="@+id/tv_blacker_phone"
+        android:textSize="20dp"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blacker_delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.wuye.activity.HomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextStyle"
+        android:textSize="20dp"
+        android:text="功能列表" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="忍，别离，不忍，却又别离，托鸿雁南去，不知此心何寄，红颜旧，任凭斗转星移，为不变此心，悠悠"
+        android:textSize="15dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:textColor="#000"/>
+
+    <GridView
+        android:id="@+id/gv_gridView"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+       />
+
+
+</LinearLayout>

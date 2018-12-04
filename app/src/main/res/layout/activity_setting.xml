@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.wuye.activity.SettingActivity">
+    <TextView
+     style="@style/TextStyle"
+        android:textSize="20dp"
+        android:text="设置中心"/>
+
+  <com.example.wuye.view.SettingitemView
+      xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+      android:id="@+id/settingitemview"
+      safeapp:destitle="自动更新设置"
+      safeapp:desoff="自动更新设置已关闭"
+      safeapp:deson="自动更新设置已开启"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </com.example.wuye.view.SettingitemView>
+
+    <com.example.wuye.view.SettingitemView
+        xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+        android:id="@+id/settingitemview1"
+        safeapp:destitle="电话归属地的显示设置"
+        safeapp:desoff="归属地的显示已关闭"
+        safeapp:deson="归属地的显示已开启"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.wuye.view.SettingitemView>
+
+  <com.example.wuye.view.SettingclickView
+      xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+      android:id="@+id/settingclickview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      safeapp:destitle="设置归属地风格显示">
+  </com.example.wuye.view.SettingclickView>
+
+  <com.example.wuye.view.SettingclickView
+      xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+      android:id="@+id/settingtouchView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      safeapp:destitle="归属地提示框的位置"
+      safeapp:deson="设置归属地提示框的位置">
+  </com.example.wuye.view.SettingclickView>
+
+  <com.example.wuye.view.SettingitemView
+      xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+      android:id="@+id/settingrocket"
+      safeapp:destitle="小火箭"
+      safeapp:desoff="小火箭已关闭"
+      safeapp:deson="小火箭已开启"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </com.example.wuye.view.SettingitemView>
+
+  <com.example.wuye.view.SettingitemView
+      xmlns:safeapp="http://schemas.android.com/apk/res/com.example.wuye.appsafe"
+      android:id="@+id/settingblacknumber"
+      safeapp:destitle="黑名单拦截设置"
+      safeapp:desoff="黑名单拦截已关闭"
+      safeapp:deson="黑名单拦截已开启"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </com.example.wuye.view.SettingitemView>
+
+</LinearLayout>

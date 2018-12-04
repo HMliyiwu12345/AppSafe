@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        style="@style/TextStyle"
+        android:text="添加黑名单号码"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/et_blacker"
+        style="@style/TextViewStyle" />
+
+      <RadioGroup
+          android:id="@+id/rg_group"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_centerVertical="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <RadioButton
+              android:id="@+id/rb_message"
+              android:text="短信"
+              android:textColor="#fff"
+              android:checked="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <RadioButton
+              android:id="@+id/rb_phone"
+              android:text="电话"
+              android:textColor="#fff"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <RadioButton
+              android:id="@+id/rb_all"
+              android:text="所有"
+              android:textColor="#fff"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/postive2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/nagtive2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
